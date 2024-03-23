@@ -112,7 +112,7 @@
     }
 
     .sobre-medico{
-        background-image: url('"../assets/medico.jpg');
+        background-image: url("../assets/medico.jpg");
         background-repeat: no-repeat;
         background-position: center;
         height: 30vh;
@@ -161,16 +161,16 @@
     }
 
     .ortopedia {
-        background-image: url(/assets/ortopedia1.png);
+        background-image: url("../assets/ortopedia1.png");
 
     }
 
     .pediatria {
-        background-image: url(/assets/pediatra.png);
+        background-image: url("../assets/pediatra.png");
     }
 
     .geriatria {
-        background-image: url(/assets/geriatra.png);
+        background-image: url("../assets/geriatra.png");
     }
 
     .multiespecialidades-img figcaption {
