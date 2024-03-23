@@ -63,7 +63,7 @@
         display: flex;
         flex-flow: column wrap;
         height: 40vh;
-        background-image: url('assets/recepcao.png');
+        background-image: url("assets/recepcao.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: -320px;
