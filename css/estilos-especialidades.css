@@ -46,15 +46,6 @@ section {
     flex-wrap: wrap;
     height: 100%;
 }
-.sobre{
-    flex-wrap: wrap;
-}
-.especilidades-descricao{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-}
 
 .especilidades-descricao h2 {
     font-size: 22px;
