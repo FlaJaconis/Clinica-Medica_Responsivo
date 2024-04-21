@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos-home.css">
-    <link rel="stylesheet" href="css/estilos-especialidades.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap
     ">
     <title>CMLife - Especialidades</title>
@@ -13,21 +12,21 @@
 
 <body>
     <header>
-        <div class="topo">
+        <div class="topo secoes">
             <div class="logo-topo">
                 <a href="index.html"><img src="assets/logo.png" alt="Logo CMLife" title="Clíniva Médica Life"></a>
             </div>
-            <nav class="links-nav">
-                <a href="#sobre">Sobre</a>
-                <a href="especialidades.html">Especialidades</a>
-                <a href="#contato">Contato</a>
-            </nav>
+            <div class="links-nav">
+                <nav>
+                    <a href="#sobre">Sobre</a>
+                    <a href="especialidades.html">Especialidades</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
         </div>
     </header>
-
-
-    <section>
-        <div class="topo-especialidades">
+    <section class="secoes conteudo-especialidades">
+        <div>
             <nav class="links-nav-especialidades">
                 <a href="#ortopedia">Ortopedia</a>
                 <a href="#pediatria">Pediatria</a>
@@ -35,98 +34,93 @@
                 <a href="#psicologia">Psicologia</a>
                 <a href="#fisioterapia">Fisioterapia</a>
             </nav>
-
-            <div>
-                <h1>Conheça as nossas especialidades</h1>
-            </div>
+        </div>
+        <div>
+            <h1>Conheça as nossas especialidades</h1>
         </div>
         <div id="especialidades" class="sobre">
-            <div class="especilidades-descricao">
-                <div id="ortopedia" >
-                    <h2>Ortopedia</h2>
-                    <p>A ortopedia é a especialidade médica que cuida da saúde relacionadas aos elementos do aparelho
-                        locomotor, como ossos, músculos, ligamentos e articulações.
-                    </p>
+            <div id="ortopedia" class="especilidades-descricao">
+                <h2>Ortopedia</h2>
+                <p>A ortopedia é a especialidade médica que cuida da saúde relacionadas aos elementos do aparelho
+                    locomotor, como ossos, músculos, ligamentos e articulações.
+                </p>
+            </div>
+            <div class="div-img-e-tabela">
+                <div class="img-medico">
+                    <img src="assets/ortopedia.png" alt="">
                 </div>
-                <div class="div-img-e-tabela">
-                    <div class="img-medico">
-                        <img src="assets/ortopedia.png" alt="">
-                    </div>
-                    <div class="div-tabela">
-                        <table class="tabela">
-                            <thead>
-                                <tr>
-                                    <th>Dias</th>
-                                    <th>Horários</th>
-                                    <th>Médico(a)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Segunda e quartas</td>
-                                    <td>8:00 às 15:00</td>
-                                    <td>Dra. Daniele Almeida</td>
-                                </tr>
-                                <tr>
-                                    <td>Terça, Quinta e Sexta</td>
-                                    <td>13:00 às 21:00</td>
-                                    <td>Dr. Dr. Daniel Souza</td>
+                <div class="div-tabela">
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th>Dias</th>
+                                <th>Horários</th>
+                                <th>Médico(a)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda e quartas</td>
+                                <td>8:00 às 15:00</td>
+                                <td>Dra. Daniele Almeida</td>
+                            </tr>
+                            <tr>
+                                <td>Terça, Quinta e Sexta</td>
+                                <td>13:00 às 21:00</td>
+                                <td>Dr. Dr. Daniel Souza</td>
 
-                                </tr>
-                                <tr>
+                            </tr>
+                            <tr>
 
-                                    <td>Sábado</td>
-                                    <td>8:00 às 12:00</td>
-                                    <td>Dr. Manoel Bento</td>
+                                <td>Sábado</td>
+                                <td>8:00 às 12:00</td>
+                                <td>Dr. Manoel Bento</td>
 
-                                </tr>
-                        </table>
-                    </div>
+                            </tr>
+                    </table>
                 </div>
             </div>
-            <div class="especilidades-descricao">
-                <div id="pediatria" >
-                    <h2>Pediatria</h2>
-                    <p>A pediatria é a especialidade médica dedicada à assistência à criança e ao adolescente, nos
-                        seus
-                        diversos aspectos, sejam eles preventivos ou curativos.
-                    </p>
+            <div id="pediatria">
+                <h2>Pediatria</h2>
+                <p>A pediatria é a especialidade médica dedicada à assistência à criança e ao adolescente, nos
+                    seus
+                    diversos aspectos, sejam eles preventivos ou curativos.
+                </p>
+            </div>
+            <div class="div-img-e-tabela">
+                <div class="img-medico">
+                    <img src="assets/pediatra2.png" alt="">
                 </div>
-                <div class="div-img-e-tabela">
-                    <div class="img-medico">
-                        <img src="assets/pediatra2.png" alt="">
-                    </div>
-                    <div class="div-tabela">
-                        <table class="tabela">
-                            <thead>
-                                <tr>
-                                    <th>Dias</th>
-                                    <th>Horários</th>
-                                    <th>Médico(a)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Segunda e quartas</td>
-                                    <td>8:00 às 15:00</td>
-                                    <td>Dra. Elaine pinheiro</td>
-                                </tr>
-                                <tr>
-                                    <td>Terça, Quinta e Sexta</td>
-                                    <td>13:00 às 21:00</td>
-                                    <td>Dr. Anderson Ramos</td>
-                                </tr>
-                                <tr>
-                                    <td>Sábado</td>
-                                    <td>8:00 às 12:00</td>
-                                    <td>Dra. Manoela Foster</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="div-tabela">
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th>Dias</th>
+                                <th>Horários</th>
+                                <th>Médico(a)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda e quartas</td>
+                                <td>8:00 às 15:00</td>
+                                <td>Dra. Elaine pinheiro</td>
+                            </tr>
+                            <tr>
+                                <td>Terça, Quinta e Sexta</td>
+                                <td>13:00 às 21:00</td>
+                                <td>Dr. Anderson Ramos</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>8:00 às 12:00</td>
+                                <td>Dra. Manoela Foster</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div id="geriatria" class="especilidades-descricao">
+            <div id="geriatria">
                 <h2>Geriatria</h2>
                 <p>Medicina geriátrica ou geriatria é o ramo da medicina que foca o estudo, a prevenção e o
                     tratamento
@@ -171,7 +165,7 @@
                     </table>
                 </div>
             </div>
-            <div id="psicologia" class="especilidades-descricao">
+            <div id="psicologia">
                 <h2>Psicologia</h2>
                 <p>Psicologia é a especialidade médica que trata da mente, do estudo e análise de seus
                     processos e
@@ -213,7 +207,7 @@
                     </table>
                 </div>
             </div>
-            <div id="fisioterapia" class="especilidades-descricao">
+            <div id="fisioterapia">
                 <h2>Fisioterapia</h2>
                 <p>Fisioterapia é uma ciência da saúde aplicada ao estudo, diagnóstico, prevenção e
                     tratamento de
@@ -221,7 +215,7 @@
                 </p>
             </div>
             <div class="div-img-e-tabela">
-                <div class="img-medico img-fisioterapia">
+                <div class="img-medico">
                     <img src="assets/fisioterapia.png" alt="">
                 </div>
                 <div class="div-tabela">
@@ -264,8 +258,6 @@
                 </div>
             </div>
     </section>
-
-
     <footer>
         <div id="rodape" class="rodape secoes">
             <img src="assets/logo.png" alt="Logo CMLife">
@@ -274,7 +266,6 @@
                 <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
                 <p>©2020 Clínica Médica Life - Todos os direitos reservados</p>
             </div>
-
         </div>
     </footer>
 </body>
