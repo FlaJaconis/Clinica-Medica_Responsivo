@@ -4,21 +4,24 @@
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
-
 }
 
-h1,
 h2,
 h3 {
-    padding-bottom: 2%;
+    padding-bottom: 20px;
 }
 
-body{
+h3 {
+    padding-top: 50px;
+
+}
+
+body {
     margin: 0 auto;
 }
 
 
-header{
+header {
     background-color: #3bccbb;
     display: flex;
     margin: 0 auto;
@@ -28,35 +31,43 @@ header{
     position: fixed;
 }
 
-.topo{
+main {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.topo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
+    height: 100%;
+    position: relative;
 }
 
-.logo-topo{
-    height: 100% ;
+.logo-topo {
+    height: 100%;
     display: flex;
     align-items: center;
     padding-top: 5px;
 }
 
 
-.logo-topo img{
+.logo-topo img {
     width: 100%;
 }
 
-.links-nav{
+.links-nav {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
 
-.links-nav a{
+.links-nav a {
     width: 100%;
     color: #ffffff;
     font-weight: bold;
@@ -69,28 +80,25 @@ header{
     color: #0000008c;
 }
 
-.conteudo-principal{
-    margin: auto;
-}
-
 .banner {
     display: flex;
     flex-flow: column wrap;
-    height: 30vh;
+    height: 200px;
     background-image: url("../assets/recepcao.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 50%;
     justify-content: center;
     align-items: center;
+    position: relative;
     top: 60px;
+    z-index: -1;
+
 }
 
 .h1-banner {
     justify-content: center;
     width: 100%;
-    position: absolute;
-    top: 15vh;
     padding-left: 20px;
 }
 
@@ -98,21 +106,19 @@ header{
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
+    padding: 0;
 }
 
-.sobre{
+.sobre {
     color: #0000008c;
     text-align: center;
-    padding: 7%;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.espaco-secoes{
-    padding-top: 20px;
+    position: relative;
+    top: 60px;
 }
 
 .lista {
@@ -122,13 +128,22 @@ header{
 }
 
 .lista li {
-  color: #0000008c;
+    color: #0000008c;
 }
 
-.multiespecialidades{
+.multiespecialidades {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.sobre-multiespecialidades {
+    padding: 30px 0 40px 0;
+}
+
+.multiespecialidades-img figcaption {
+    padding: 5% 0 2% 0;
 }
 
 .buton {
@@ -137,15 +152,21 @@ header{
     background-color: #3bccbb;
     padding: 1%;
     color: #ffffff;
-    min-height: 50px;
-    max-width: 200px;
-    margin: auto;
+    height: 50px;
 }
 
+.buton a {
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+}
+
+.contato {
+    margin-bottom: 50px;
+}
 
 footer {
     background-color: #037064;
-    bottom: 0;
 }
 
 .rodape {
@@ -168,63 +189,62 @@ footer {
     max-width: 40%;
 }
 
-.rodape p, li {
+.rodape p,
+li {
     color: #ffffff;
     justify-content: center;
     padding: 1%;
 
 }
 
-.buton a {
-    color: #ffffff;
-    text-decoration: none;
-    width: 100%;
-}
-
 iframe {
     width: 100%;
-    height: 30vh;
+    height: 300px;
     padding-top: 20px;
 }
 
 
 /* ****TELAS A PARTIR DE 320PX ATÉ 425PX**** */
 @media (min-width: 320px) and (max-width: 425px) {
-    header{
+    body {
         max-width: 425px;
     }
-    .logo-topo{
+
+    .logo-topo {
         width: 27%;
     }
-    .links-nav{
+
+    .links-nav {
         position: absolute;
         right: 7%;
     }
 
-    .links-nav a{
+    .links-nav a {
         font-size: 12px;
     }
 
     .h1-banner h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .sobre {
         font-size: 20px;
     }
 
-    .sobre h2{
+    .sobre h2 {
         font-size: 20px;
     }
 
-    .sobre h3{
+    .sobre h3 {
         font-size: 16px;
     }
 
-    .sobre p, li{
+    .sobre p,
+    li {
         font-size: 16px;
     }
-    .lista ul{
+
+    .lista ul {
         padding-left: 30px;
     }
 
@@ -232,9 +252,9 @@ iframe {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: auto;
         width: 100%;
         flex-flow: column wrap;
+        padding-bottom: 10px;
     }
 
     .multiespecialidades-img {
@@ -268,13 +288,8 @@ iframe {
         background-position: center;
     }
 
-    .multiespecialidades-img figcaption {
-        padding: 5%;
-    }
-
     .buton {
         background-color: #3bccbb;
-        padding: 1%;
         color: #ffffff;
         width: 50%;
 
@@ -286,115 +301,110 @@ iframe {
         width: 100%;
     }
 
-    iframe {
+}
+
+/* ****TELAS A PARTIR DE 426PX**** */
+
+@media (min-width: 426px) {
+
+    .links-nav {
+        position: absolute;
+        right: 5%;
+    }
+
+    .links-nav a {
+        font-size: 15px;
         width: 100%;
-        height: 30vh;
     }
 
 }
-
 
 /* ****TELAS A PARTIR DE 426PX ATÉ 768PX**** */
 
 @media (min-width: 426px) and (max-width: 768px) {
 
-    header{
-        min-width: 426px ;
+    body {
         max-width: 768px;
     }
 
-    .logo-topo{
+    .logo-topo {
         width: 20%;
     }
 
-    .links-nav{
-        position: absolute;
-        right: 5%;
+    .h1-banner h1 {
+        font-size: 20px;
     }
 
-    .links-nav a{
-        font-size: 15px;
-        width: 100%;
+    .multiespecialidades {
+        width: 90%;
     }
-   
+
     .sobre-multiespecialidades {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       margin: auto;
-       width: 100%;
-       flex-flow: column wrap;
-       padding: 0 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
-   }
 
-   .multiespecialidades-img {
-       width: 50%;
-       height: 30vh;
-       margin-bottom: 10%;
-       border-radius: 2%;
-       box-shadow: 0 0 10px #0000008c;
-   }
+    .multiespecialidades-img {
+        width: 35%;
+        height: 200px;
+        border-radius: 2%;
+        box-shadow: 0 0 10px #0000008c;
+    }
 
-   .multiespecialidades-img figure {
-       width: 100%;
-       height: 100%;
-       background-size: cover;
-       border-radius: 2%;
-       background-repeat: no-repeat;
-   }
+    .multiespecialidades-img figure {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 2%;
+        background-repeat: no-repeat;
+    }
 
-   .ortopedia {
-       background-image: url("../assets/ortopedia1.png");
-       background-position: center;
-   }
+    .ortopedia {
+        background-image: url("../assets/ortopedia1.png");
+        background-position: center;
+    }
 
-   .pediatria {
-       background-image: url("../assets/pediatra.png");
-       background-position-x: -50px;
-   }
+    .pediatria {
+        background-image: url("../assets/pediatra.png");
+        background-position-x: -50px;
+    }
 
-   .geriatria {
-       background-image: url("../assets/geriatra.png");
-       background-position: center;
-   }
+    .geriatria {
+        background-image: url("../assets/geriatra.png");
+        background-position: center;
+    }
 
-   .multiespecialidades-img figcaption {
-       padding: 5%;
-   }
-
-  }
+}
 
 /* ****TELAS A PARTIR DE 769PX**** */
 
-@media (min-width: 769px){
+@media (min-width: 769px) {
 
-    header{
-        min-width: 769px ;
+    body {
+        max-width: 1024;
     }
-    .logo-topo{
+
+    .logo-topo {
         width: 15%;
     }
 
-    .links-nav{
+    .links-nav {
         position: absolute;
         right: 5%;
     }
 
-    .links-nav a{
-        font-size: 18px;
-        width: 100%;
-        padding: 2%;
-    }
-   
     .sobre {
         margin: auto;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 2% 1%;
         font-size: 20px;
-
     }
 
 
@@ -410,7 +420,7 @@ iframe {
         background-image: url("../assets/medico.jpg");
         background-repeat: no-repeat;
         background-position: center;
-        height: 30vh;
+        height: 250px;
         background-size: contain;
         width: 35%;
     }
@@ -427,17 +437,15 @@ iframe {
     .sobre-multiespecialidades {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: auto;
         width: 100%;
-        padding: 1%;
-        gap: 70px;
-
+        margin-bottom: 40px;
     }
 
     .multiespecialidades-img {
-        width: 35%;
-        height: 25vh;
+        width: 25%;
+        height: 200px;
         box-shadow: 0 0 10px #0000008c;
     }
 
@@ -447,8 +455,8 @@ iframe {
         background-position: center;
         background-size: cover;
         border-radius: 2%;
-
     }
+
     .ortopedia {
         background-image: url("../assets/ortopedia1.png");
 
@@ -462,9 +470,4 @@ iframe {
         background-image: url("../assets/geriatra.png");
     }
 
-    .multiespecialidades-img figcaption {
-        padding: 5%;
-    }
-
 }
-

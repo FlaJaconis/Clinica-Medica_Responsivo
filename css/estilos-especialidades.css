@@ -4,28 +4,34 @@ h1 {
     color: #0000008c;
     text-align: center;
 }
-header{
-    position: relative;
+body{
+    margin: 0 auto;
 }
 
-section {
+main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
 }
 
 .topo-especialidades {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.sobre{
+    position: relative;
+    top: 0;
 }
 
 .links-nav-especialidades {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 20px 0;
+    margin: 60px 0 40px 0;
 }
 
 .links-nav-especialidades a {
@@ -34,47 +40,36 @@ section {
     font-weight: bold;
     text-decoration: none;
     border-bottom: 2px solid #3bccbb;
-    width: 100%;
 }
 
 .links-nav-especialidades a:hover {
     color: #00000059;
 }
 
-.section{
-    width: 100%;
-    flex-wrap: wrap;
-    height: 100%;
+.especilidades-descricao {
+    padding-bottom: 30px;
+    width: 90%;
 }
 
 .especilidades-descricao h2 {
     font-size: 22px;
-    padding-top: 40px;
 }
 
 .div-img-e-tabela {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 20px;
     width: 100%;
-    padding-top: 40px;
+    height: 280px;
+    justify-content: center;
+
 }
 
-.img-medico {
+.div-tabela {
     height: 100%;
+    align-items: center;
 }
-
-.img-medico img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: center;
-}
-
-.img-medico .img-fisioterapia img {
-    object-fit: contain;
-}
-
 
 table {
     height: 100%;
@@ -99,15 +94,13 @@ table tbody tr:nth-last-of-type(odd) {
     background-color: #00000033;
 }
 
-/* ****TELAS A PARTIR DE 320PX ATÉ 425PX**** */
-@media (min-width: 320px) and (max-width: 425px) {
 
-    section{
-        justify-content: center;
-        max-width: 425px;
-    }
-    .topo-especialidades{
-        width: 100%;
+/* ****TELAS ATÉ 768PX**** */
+
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 18px;
     }
 
     .links-nav-especialidades {
@@ -115,6 +108,7 @@ table tbody tr:nth-last-of-type(odd) {
         justify-content: center;
         flex-wrap: wrap;
     }
+
     .links-nav-especialidades a {
         font-size: 16px;
         justify-content: center;
@@ -122,21 +116,15 @@ table tbody tr:nth-last-of-type(odd) {
         margin: 10px;
     }
 
- 
+
     .div-img-e-tabela {
         justify-content: center;
-        height: 30vh;
-        mar-bottom: 30px;
-    }
-
-    .img-medico {
-        width: 100%;
     }
 
     .div-tabela {
-        height: 100%;
-        align-items: center;
+        width: 100%;
     }
+
 
     table {
         font-size: 14px;
@@ -144,19 +132,12 @@ table tbody tr:nth-last-of-type(odd) {
 
 }
 
-
-/* ****TELAS A PARTIR DE 426PX ATÉ 768PX**** */
-
-@media (min-width: 426px) and (max-width: 768px) {
-
-  
-
-  }
 /* ****TELAS A PARTIR DE 769PX**** */
 
 @media (min-width: 769px) {
-    section {
-        max-width: 1024px;
+
+    main {
+        padding-top: 60px;
     }
 
     .links-nav-especialidades a {
@@ -165,28 +146,46 @@ table tbody tr:nth-last-of-type(odd) {
         margin: 0 20px;
 
     }
+    .img-medico {
+        height: 100%;
+        width: 30%;
+    }
 
     .div-img-e-tabela {
         justify-content: space-between;
-        height: 40vh;
     }
 
-    .img-medico {
-        width: 40%;
+    #ortopedia .img-medico {
+        background-image: url("/assets/ortopedia.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #pediatria .img-medico {
+        background-image: url("/assets/pediatra2.png");
+    }
+
+    #geriatria .img-medico {
+        background-image: url("/assets/geriatra.png");
+    }
+
+    #psicologia .img-medico {
+        background-image: url("/assets/psicologo.png");
+    }
+
+    #fisioterapia .img-medico {
+        background-image: url("/assets/fisioterapia.png");
+
     }
 
     .div-tabela {
         flex-grow: 1;
-        padding-left: 30px;
+        margin-left: 10px;
         height: 100%;
         align-items: center;
     }
-
-   
-
+    
     table {
         font-size: 16px;
     }
-
-   
 }
