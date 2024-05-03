@@ -4,25 +4,9 @@ h1 {
     color: #0000008c;
     text-align: center;
 }
-body{
-    margin: 0 auto;
-}
 
-main {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.topo-especialidades {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.sobre{
-    position: relative;
-    top: 0;
+.topo-especialidades{
+    padding: 20px 20px 0 20x;
 }
 
 .links-nav-especialidades {
@@ -30,8 +14,7 @@ main {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding: 20px 0;
-    margin: 60px 0 40px 0;
+    padding: 20px 0 30px 0;
 }
 
 .links-nav-especialidades a {
@@ -40,6 +23,8 @@ main {
     font-weight: bold;
     text-decoration: none;
     border-bottom: 2px solid #3bccbb;
+    justify-content: center;
+    margin: 10px;
 }
 
 .links-nav-especialidades a:hover {
@@ -111,9 +96,7 @@ table tbody tr:nth-last-of-type(odd) {
 
     .links-nav-especialidades a {
         font-size: 16px;
-        justify-content: center;
         width: 80px;
-        margin: 10px;
     }
 
 
@@ -136,16 +119,20 @@ table tbody tr:nth-last-of-type(odd) {
 
 @media (min-width: 769px) {
 
-    main {
-        padding-top: 60px;
+    .topo-especialidades {
+        padding: 40px 0 0 0;
+
+    }
+
+    .links-nav-especialidades  {
+        padding-bottom: 60px;
+
     }
 
     .links-nav-especialidades a {
         font-size: 20px;
-        justify-content: space-between;
-        margin: 0 20px;
-
     }
+
     .img-medico {
         height: 100%;
         width: 30%;

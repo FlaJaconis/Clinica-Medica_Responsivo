@@ -18,6 +18,9 @@ h3 {
 
 body {
     margin: 0 auto;
+    max-width: 1024px;
+    background-color: #ffffff;
+
 }
 
 
@@ -29,13 +32,18 @@ header {
     width: 100%;
     height: 60px;
     position: fixed;
+    max-width: 1024px;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     width: 100%;
     position: relative;
+    top: 60px;
     z-index: -1;
+    background-color: azure;
 }
 
 .topo {
@@ -88,10 +96,12 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 50%;
+    position: absolute;
+    top: 0;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 60px;
+    top: 0px;
     z-index: -1;
 
 }
@@ -117,8 +127,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 60px;
 }
 
 .lista {
@@ -131,7 +139,7 @@ main {
     color: #0000008c;
 }
 
-.multiespecialidades {
+.div-multiespecialidades {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,16 +154,19 @@ main {
     padding: 5% 0 2% 0;
 }
 
-.buton {
+.button {
     display: flex;
     align-items: center;
     background-color: #3bccbb;
     padding: 1%;
-    color: #ffffff;
+    width: 150px;
     height: 50px;
 }
+.button a:hover{
+   color: #0000008c;
+}
 
-.buton a {
+.button a {
     color: #ffffff;
     text-decoration: none;
     width: 100%;
@@ -164,9 +175,14 @@ main {
 .contato {
     margin-bottom: 50px;
 }
+iframe {
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+}
 
 footer {
-    background-color: #037064;
+    background-color: #037064;   
 }
 
 .rodape {
@@ -178,6 +194,7 @@ footer {
     padding: 2%;
     max-height: 15%;
     margin: auto;
+
 }
 
 .rodape div {
@@ -197,16 +214,12 @@ li {
 
 }
 
-iframe {
-    width: 100%;
-    height: 300px;
-    padding-top: 20px;
-}
+
 
 
 /* ****TELAS A PARTIR DE 320PX ATÉ 425PX**** */
 @media (min-width: 320px) and (max-width: 425px) {
-    body {
+    main {
         max-width: 425px;
     }
 
@@ -288,19 +301,6 @@ iframe {
         background-position: center;
     }
 
-    .buton {
-        background-color: #3bccbb;
-        color: #ffffff;
-        width: 50%;
-
-    }
-
-    .buton a {
-        color: #ffffff;
-        text-decoration: none;
-        width: 100%;
-    }
-
 }
 
 /* ****TELAS A PARTIR DE 426PX**** */
@@ -323,9 +323,6 @@ iframe {
 
 @media (min-width: 426px) and (max-width: 768px) {
 
-    body {
-        max-width: 768px;
-    }
 
     .logo-topo {
         width: 20%;
@@ -335,7 +332,7 @@ iframe {
         font-size: 20px;
     }
 
-    .multiespecialidades {
+    .div-multiespecialidades{
         width: 90%;
     }
 
@@ -385,9 +382,9 @@ iframe {
 /* ****TELAS A PARTIR DE 769PX**** */
 
 @media (min-width: 769px) {
-
-    body {
-        max-width: 1024;
+   
+    .banner{
+        /* background-position-y: 50%; */
     }
 
     .logo-topo {
@@ -410,27 +407,32 @@ iframe {
 
     .sobre-img-e-lista {
         display: flex;
-        width: 100%;
-        align-items: center;
-        padding: 0 5%;
+        width: 800px;
+        height: 310px;
         justify-content: center;
+        align-items: center;
+        padding: 2% 5%;
     }
 
     .sobre-medico {
-        background-image: url("../assets/medico.jpg");
+        background-image: url("../assets/medico.png");
         background-repeat: no-repeat;
-        background-position: center;
-        height: 250px;
+        background-position: top;
+        width: 60%;
+        height: 100%;
         background-size: contain;
-        width: 35%;
-    }
-
-    .sobre-img-e-lista img {
-        width: 40%;
     }
 
     .sobre-img-e-lista h3 {
+        padding: 0;
         text-transform: uppercase;
+    }
+
+    .div-tit-lista{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 100%;
     }
 
 
