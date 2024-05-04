@@ -136,6 +136,8 @@ table tbody tr:nth-last-of-type(odd) {
     .img-medico {
         height: 100%;
         width: 30%;
+        background-size: cover;
+
     }
 
     .div-img-e-tabela {
@@ -157,8 +159,10 @@ table tbody tr:nth-last-of-type(odd) {
 
     #geriatria .img-medico {
         background-image: url("../assets/geriatra.png");
+        background-position-x: 40%;
     }
-
+    
+    
     #psicologia .img-medico {
         background-image: url("../assets/psicologo.png");
     }
