@@ -151,6 +151,8 @@ table tbody tr:nth-last-of-type(odd) {
 
     #pediatria .img-medico {
         background-image: url("../assets/pediatra2.png");
+        background-position-x: 45%;
+        background-position-y: 30%;
     }
 
     #geriatria .img-medico {
