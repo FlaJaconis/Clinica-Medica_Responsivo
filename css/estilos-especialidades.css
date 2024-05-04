@@ -146,6 +146,7 @@ table tbody tr:nth-last-of-type(odd) {
         background-image: url("../assets/ortopedia.png");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 30%;
     }
 
     #pediatria .img-medico {
