@@ -149,19 +149,19 @@ table tbody tr:nth-last-of-type(odd) {
     }
 
     #pediatria .img-medico {
-        background-image: url("/assets/pediatra2.png");
+        background-image: url("../assets/pediatra2.png");
     }
 
     #geriatria .img-medico {
-        background-image: url("/assets/geriatra.png");
+        background-image: url("../assets/geriatra.png");
     }
 
     #psicologia .img-medico {
-        background-image: url("/assets/psicologo.png");
+        background-image: url("../assets/psicologo.png");
     }
 
     #fisioterapia .img-medico {
-        background-image: url("/assets/fisioterapia.png");
+        background-image: url("../assets/fisioterapia.png");
 
     }
 
